@@ -89,8 +89,8 @@
 				buttonDone.addEventListener("click", () => {
 					/* TODO */
                     /* add some codes for the future */
-					div.append();
-					tasks = tasks.filter(t => t === task);
+					div.remove();
+					tasks = tasks.filter(t => t !== task);
 					saveTasks();
 				});
 			}
