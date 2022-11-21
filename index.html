@@ -88,9 +88,9 @@
 
 				buttonDone.addEventListener("click", () => {
 					/* TODO */
-                    /* add some codes for the future */
+					task.type = Type.Done;
+					addToList(task);
 					div.remove();
-					tasks = tasks.filter(t => t !== task);
 					saveTasks();
 				});
 			}
